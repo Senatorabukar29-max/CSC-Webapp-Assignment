@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Inventory</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🍎 Food Inventory Tracker</h1>
+
+        <form action="/add" method="POST" class="form-section">
+            <input type="text" name="name" placeholder="Food Name" required>
+            <input type="number" name="quantity" placeholder="Quantity" required>
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+
+        <ul class="inventory-list">
+            {% for item in inventory %}
+                <li>
+                    <span class="item-info">{{ item.name }} - {{ item.quantity }}</span>
+
+                    <form action="/update/{{ loop.index0 }}" method="POST" class="inline-form">
+                        <input type="text" name="name" placeholder="New Name" required>
+                        <input type="number" name="quantity" placeholder="New Qty" required>
+                        <button class="update-btn">Update</button>
+                    </form>
+
+                    <a href="/delete/{{ loop.index0 }}" class="delete-btn">Delete</a>
+                </li>
+            {% else %}
+                <li class="empty">No items yet. Add one above!</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
