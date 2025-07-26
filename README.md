@@ -1,10 +1,10 @@
 # CSC-Webapp-Assignment
 
-📦 Food Inventory Web App
+Food Inventory Web App
 
 A simple Flask-based web app for managing a food inventory. Users can add, update, and delete food items, with a clean and colorful interface showcasing popular Nigerian dishes.
 
-👥 Team Members & Contributions
+Team Members & Contributions
 
 Abukar Godswill Ngbede
 Set up the Flask application, created all backend routes (add, update, delete) and ensured data was handled properly.
