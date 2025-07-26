@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f8fafc, #dbeafe);
+    padding: 30px;
+    margin: 0;
+}
+
+.container {
+    max-width: 700px;
+    background-color: white;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 8px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    width: 150px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #2563eb;
+}
+
+.update-btn {
+    background-color: #16a34a;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.inventory-list {
+    list-style: none;
+    padding: 0;
+}
+
+.inventory-list li {
+    background-color: #f1f5f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.item-info {
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.empty {
+    text-align: center;
+    color: #64748b;
+    font-style: italic;
+}
